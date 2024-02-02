@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/v1/mortgage")
 public class MortgageController {
@@ -23,7 +25,7 @@ public class MortgageController {
 
     @PostMapping
     public ResponseEntity<Object> calculateMortgage(@Valid @RequestBody MortgageDto payload) {
-        Double mortgage = mortgageService.calculateMortgage(payload.getLoanAmount(), payload.getAnnualInterestRate(), payload.getLoanTermYears(), null);
+        Object mortgage = mortgageService.calculateMortgage(payload.getLoanAmount(), payload.getAnnualInterestRate(), payload.getLoanTermYears(), null);
         return ResponseHandler.generateSuccessResponse(HttpStatus.OK, mortgage);
     }
 }
