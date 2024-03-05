@@ -23,7 +23,7 @@ This project implements a mortgage calculator as a RESTful service using Spring 
 4. Run the application:
 
 
-5. Once the application is running, you can access the endpoints using tools like cURL, Postman, or any web browser.
+5. Once the application is running, you can access the endpoints using tools like cURL, Postman, or any browser.
 
 ## Usage
 
