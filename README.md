@@ -14,14 +14,11 @@ This project implements a mortgage calculator as a RESTful service using Spring 
 
 1. Clone the repository to your local machine:
 
-
 2. Open the project in your preferred IDE.
 
 3. Build the project using Maven:
 
-
 4. Run the application:
-
 
 5. Once the application is running, you can access the endpoints using tools like cURL, Postman, or any browser.
 
@@ -37,5 +34,5 @@ This project implements a mortgage calculator as a RESTful service using Spring 
 {
   "loan_amount": 90000,
   "interest_Rate": 3.92,
-  "loan_term_years": 10
+  "loan_term_years": 10 
 }
